@@ -18,9 +18,9 @@
 
     CREATE TABLE personas  
     (  
-        id tinyint unsigned auto_increment,   
-        apellido varchar(50),  
-        nombre varchar(50),  
-        dni int unsigned,  
-        alta date
+        id tinyint unsigned auto_increment primary key not null,   
+        apellido varchar(50) not null,  
+        nombre varchar(50) not null,  
+        dni int unsigned unique not null,  
+        alta date not null
     );
